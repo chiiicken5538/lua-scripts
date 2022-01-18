@@ -32,7 +32,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scr
 - Krnl (I would not recommend using KRNL)
 
 ## Contact 
-» Discord (fastest response)
+» Discord (fastest response) <br />
 > chiiicken#3436 <br />
-» Email
+» Email <br />
 > pub@chiiicken.de <br />

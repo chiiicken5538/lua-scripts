@@ -18,7 +18,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scr
 
 **DaHood kits** <br />
 *Allows you to create and fully customize your own Kits for DaHood - build-in kit explorer* <br />
-*Usually made for players that want to play Legit but still are to lazy to buy weapons by themself* <br />
+*Usually made for players that want to play Legit but still are too lazy to buy weapons by themself* <br />
 ```lua
 -- releasing soon
 ```

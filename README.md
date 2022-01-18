@@ -34,5 +34,3 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scr
 ## Contact 
 » Discord (fastest response) <br />
 > chiiicken#3436 <br />
-» Email 
-> pub@chiiicken.de <br />

@@ -8,6 +8,12 @@
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scripts/main/antiafk.lua"))()
 ```
+**DaHood Fly Bypass** <br />
+*DaHood Anticheat fly bypass* <br />
+*Unpatched* <br />
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scripts/main/flybypass.lua"))()
+```
 
 **Chiiicken Dropper** <br />
 *Advanced DaHood Cash dropper with build-in fly, teleports, AntiAFK, Altaccount control, and Server Crash* <br />

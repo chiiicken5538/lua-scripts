@@ -2,8 +2,8 @@ local vu = game:GetService("VirtualUser")
 
 game.StarterGui:SetCore("SendNotification", {
     Title = "AntiAFK";
-    Text = "AntiAFK enabled - This will prevent Idle kicks";
-    Duration = 5;
+    Text = "working uwuw";
+    Duration = 3;
 })
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()

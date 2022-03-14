@@ -18,14 +18,12 @@ local instantCrash = true
 local crashingPower = 100
 
 
-
+-- crash server ezzz
 while true do 
-    crashServer()
-end
-
-function crashServer()
     print("f#")
 end
+
+
 --[[
 yes, this code does not makes sense at all I could do that in one line but I am bored
 ]]--

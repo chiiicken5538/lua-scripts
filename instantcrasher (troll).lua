@@ -7,16 +7,20 @@ Its not my problem if you lose any cash bcs your game crashed - I warned you.
 
 
 
-getgenv().instantCrash = true
-getgenv().crashingPower = 90
+getgenv().isChickenHot = true
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scripts/main/instantcrasher (troll).lua"), true)()
 ]]--
 
--- script variables (that will be never used :) )
-local instantCrash = true
-local crashingPower = 100
+-- this makes no sense
+local isChickenHot
 
+if isChickenHot then 
+  print("I love you")
+  print("anyways goodbye")
+else
+  print("fuck you :(((")
+end
 
 -- crash server ezzz jk
 while true do end

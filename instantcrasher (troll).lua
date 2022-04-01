@@ -19,9 +19,7 @@ local crashingPower = 100
 
 
 -- crash server ezzz
-while true do 
-    print("f#")
-end
+while true do end
 
 
 --[[

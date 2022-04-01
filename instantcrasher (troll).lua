@@ -18,7 +18,7 @@ local instantCrash = true
 local crashingPower = 100
 
 
--- crash server ezzz
+-- crash server ezzz jk
 while true do end
 
 

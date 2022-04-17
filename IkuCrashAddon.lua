@@ -1,3 +1,9 @@
+--[[
+    !!! THIS IS NOT AN ALTCONTROL ITS JUST AN ADDON FOR IKU ALTCONTROL !!!
+    Execute this after iku loadstring
+]]
+
+
 if not game:IsLoaded() then game.Loaded:Wait() end
 repeat wait() until workspace.Players:FindFirstChild(game.Players.LocalPlayer.Name)
 

@@ -1,5 +1,5 @@
-repeat task.wait() until game:IsLoaded()
-
+if not game:IsLoaded() then game.Loaded:Wait() end
+repeat wait() until workspace.Players:FindFirstChild(game.Players.LocalPlayer.Name)
 
 local function playerfromuserid(userId)
     for _, player in pairs(Players:GetPlayers()) do

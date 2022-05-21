@@ -1,13 +1,7 @@
-local vu = game:GetService("VirtualUser")
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "AntiAFK";
-    Text = "working uwuw";
-    Duration = 3;
-})
+local virtualUser = game:GetService("VirtualUser")
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
-   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   virtualUser:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
    wait(1)
-   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   virtualUser:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)

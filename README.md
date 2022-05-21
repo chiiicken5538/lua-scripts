@@ -21,7 +21,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scr
 *Prevents Idle-Kicks* <br />
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scripts/main/antiafk.lua"))()
-
+```
 
 
 ## Supported Executors

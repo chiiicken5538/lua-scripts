@@ -7,7 +7,7 @@ local MyAccount = RAMAccount.new(localPlayer.Name)
 
 if getgenv().Settings.RAM_Integration == true then
     if MyAccount then
-        print('[RAM-Integration] Successfully loaded Account ' .. localPlayer.display)
+        print('[RAM-Integration] Successfully loaded Account ' .. localPlayer.Name)
 
         MyAccount:SetDescription("$".. localPlayer.DataFolder.Currency.Value)
     

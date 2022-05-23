@@ -1,5 +1,5 @@
+repeat task.wait() until game:IsLoaded()
 local localPlayer = game:GetService("Players").LocalPlayer
-
 
 --/ Roblox Account Manager API
 local RAMAccount = loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scripts/main/IkuAddons/apis/RAMAccount.lua"))()
@@ -31,6 +31,3 @@ if getgenv().Settings.RAM_Integration == true then
 else
     print('[RAM-Integration] Disabled.')
 end
-
-local value = 3842384723
-print(math.floor(value):reverse():gsub("(%d%d%d)", "%1."):gsub(",(%-?)$","%1"):reverse())

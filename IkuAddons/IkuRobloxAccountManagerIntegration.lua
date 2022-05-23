@@ -7,11 +7,13 @@ local MyAccount = RAMAccount.new(localPlayer.Name)
 
 if getgenv().Settings.RAM_Integration == true then
     if MyAccount then
+
+        local cash_formatted = tostring(math.floor(localPlayer.DataFolder.Currency.Value)):reverse():gsub("(%d%d%d)","%1."):gsub(",(%-?)$","%1"):reverse()
         print('[RAM-Integration] Successfully loaded Account ' .. localPlayer.Name)
 
-        MyAccount:SetDescription("$".. localPlayer.DataFolder.Currency.Value)
+        MyAccount:SetDescription("$".. cash_formatted)
     
-        print('[RAM-Integration] Updated description ($'.. localPlayer.DataFolder.Currency.Value ..')')
+        print('[RAM-Integration] Updated description ($'.. cash_formatted ..')')
     else
 
         print('[RAM-Integration] Failed to load Account!')
@@ -29,3 +31,6 @@ if getgenv().Settings.RAM_Integration == true then
 else
     print('[RAM-Integration] Disabled.')
 end
+
+local value = 3842384723
+print(math.floor(value):reverse():gsub("(%d%d%d)", "%1."):gsub(",(%-?)$","%1"):reverse())

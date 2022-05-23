@@ -13,6 +13,7 @@ if getgenv().Settings.RAM_Integration == true then
     
         print('[RAM-Integration] Updated description ($'.. localPlayer.DataFolder.Currency.Value ..')')
     else
+
         print('[RAM-Integration] Failed to load Account!')
         print('[RAM-Integration] Please make sure that you have the following in the RAMSettings.ini file set:')
         print('[RAM-Integration] ')
@@ -23,5 +24,8 @@ if getgenv().Settings.RAM_Integration == true then
         print('[RAM-Integration] --> EveryRequestRequiresPassword=false')
         print('[RAM-Integration] ')
         print('[RAM-Integration] You can find the RAMSettings.ini File in your Roblox Account Manager directory')
+
     end
+else
+    print('[RAM-Integration] Disabled.')
 end

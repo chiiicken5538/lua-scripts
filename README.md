@@ -2,6 +2,15 @@
 
 ## Loadstrings
 
+
+**DaHood Roblox Account Manager Integration** <br />
+*This is a addon that sets your DaHood Cash as description in your Roblox Account Manager* <br />
+*Working* <br />
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scripts/main/DaHood%20RAM%20Integration.lua"))()
+```
+
+
 **Chiiickens Crashing GUI** <br />
 *A GUI that shows you multiple crashing methods - Please select only one crasher - updating + adding more crashing methods soon* <br />
 *Unpatched* <br />

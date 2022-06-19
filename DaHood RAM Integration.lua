@@ -24,12 +24,8 @@ EveryRequestRequiresPassword=false
 
 ]]--
 
-if not game:isLoaded() then
-  game.Loaded:Wait()
-end
-
-if not workspace.Players[game.Players.LocalPlayer.Name] then
-  repeat wait() until workspace.Players:FindFirstChild(game.Players.LocalPlayer.Name)
+if not game:IsLoaded() then
+	game.Loaded:Wait()
 end
 
 local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()

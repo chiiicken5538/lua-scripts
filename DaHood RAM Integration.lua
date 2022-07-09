@@ -24,9 +24,12 @@ EveryRequestRequiresPassword=false
 
 ]]--
 
-if not game:IsLoaded() then
-	game.Loaded:Wait()
+if not game['Loaded'] or not game:GetService('Players')['LocalPlayer'] then
+	game['Loaded']:Wait();
+	game:WaitForChild(game:GetService('Players'));
+	game:GetService('Players'):WaitForChild(game:GetService('Players').LocalPlayer.Name)
 end
+
 
 local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
 

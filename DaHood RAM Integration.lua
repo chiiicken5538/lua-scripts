@@ -11,7 +11,7 @@
 --[[
             -- CHANGELOG --
 
-            07/11/2022 updated script loader: Script doesn't returns and throws error anymore when using autoexecute
+            07/11/2022 updated script loader: Script doesn't throws errors anymore when using autoexecute
 
             -- CHANGELOG --
 ]]--

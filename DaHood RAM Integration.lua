@@ -39,12 +39,17 @@ end
 print("[RAMStats] Waiting for DaHood to load...")
 
 DAHOOD_LOADED = false
+
+
 repeat wait()
-		if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
-				print("[RAMStats] Script ready.")
-				DAHOOD_LOADED = true
-		end
+
+	if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
+		print("[RAMStats] Script ready.")
+		DAHOOD_LOADED = true
+	end
+
 until DAHOOD_LOADED == true
+
 
 
 -- Main script

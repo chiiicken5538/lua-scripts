@@ -9,6 +9,14 @@
 ]]--
 
 --[[
+            -- CHANGELOG --
+    
+            07/11/2022 updated script loader: Script doesn't returns and throws error anymore when using autoexecute
+
+            -- CHANGELOG --       
+]]--
+
+--[[
 
 IF THE SCRIPT IS NOT WORKING THEN MAKE SURE TO COPY THE FOLLOWING SETTINGS IN YOUR "RAMSettings.ini" FILE !!!
     
@@ -24,12 +32,20 @@ EveryRequestRequiresPassword=false
 
 ]]--
 
-if not game['Loaded'] or not game:GetService('Players')['LocalPlayer'] then
-	game['Loaded']:Wait();
-	game:WaitForChild(game:GetService('Players'));
-	game:GetService('Players'):WaitForChild(game:GetService('Players').LocalPlayer.Name)
-end
 
+
+-- Script Loader
+
+DAHOOD_LOADED = false
+repeat wait()
+		if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
+				DAHOOD_LOADED = true
+		end
+until DAHOOD_LOADED == true
+
+
+
+-- Main script
 
 local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
 

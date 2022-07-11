@@ -1,3 +1,4 @@
+
 --[[
   This is a addon that sets your DaHood Cash as description in your Roblox Account Manager
 
@@ -31,17 +32,18 @@ EveryRequestRequiresPassword=false
 
 
 -- Script Loader
-wait(10) -- temporaly fix...
-repeat wait() until game.Players.LocalPlayer.Character
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
 print("[RAMStats] Waiting for DaHood to load...")
 
---// second check
 DAHOOD_LOADED = false
 repeat wait()
-	if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
-		print("[RAMStats] Script ready.")
-		DAHOOD_LOADED = true
-	end
+		if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
+				print("[RAMStats] Script ready.")
+				DAHOOD_LOADED = true
+		end
 until DAHOOD_LOADED == true
 
 

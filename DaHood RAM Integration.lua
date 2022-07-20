@@ -13,12 +13,18 @@
 
             07/11/2022 updated script loader: Script doesn't throws errors anymore when using autoexecute
 
+            07/20/2022 cleaned up some code ;; Replaced deprecated luau methods ;; added message on roblox load ;; showing dahood loading message only when dahood is not loaded
             -- CHANGELOG --
 ]]--
 
 --[[
 
 IF THE SCRIPT IS NOT WORKING THEN MAKE SURE TO COPY THE FOLLOWING SETTINGS IN YOUR "RAMSettings.ini" FILE !!!
+
+
+[Developer]
+DevMode=false
+EnableWebServer=true
 
 [WebServer]
 WebServerPort=7963
@@ -33,28 +39,28 @@ EveryRequestRequiresPassword=false
 
 -- Script Loader
 if not game:IsLoaded() then
+  print("[RAMStats] Waiting for Roblox to load...")
 	game.Loaded:Wait()
 end
 
-print("[RAMStats] Waiting for DaHood to load...")
-
-DAHOOD_LOADED = false
 
 
-repeat wait()
+if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
 
-	if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
-		print("[RAMStats] Script ready.")
-		DAHOOD_LOADED = true
-	end
+  print("[RAMStats] Waiting for DaHood to load...")
 
-until DAHOOD_LOADED == true
+  repeat task.wait()
+  until game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil
+
+  print("[RAMStats] Script ready.")
+  
+end
 
 
 
 -- Main script
 
-local RAMAccount = loadstring(game:HttpGet'https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua')()
+local RAMAccount = loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Roblox-Account-Manager/master/RAMAccount.lua"))()
 
 local MyAccount = RAMAccount.new(game:GetService'Players'.LocalPlayer.Name)
 
@@ -76,5 +82,7 @@ if MyAccount then
     print("[RAMStats] Updated RAM description")
 
     MyAccount:SetDescription("$"..format(game:GetService("Players").LocalPlayer.DataFolder.Currency.Value))
+
+    return
 
 end

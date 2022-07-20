@@ -34,10 +34,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scr
 
 
 ## Supported Executors
-- SynapseX (100%)
-- ScriptWare (100%)
-- Fluxus (100%)
-- Krnl (I would not recommend using KRNL)
+- SynapseX
+- ScriptWare
+- Fluxus
+- Krnl
+- Temple 
+- litterly every updated exploit
 
 ## Contact 
 » Discord (fastest response) <br />

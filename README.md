@@ -41,6 +41,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiiicken5538/lua-scr
 - Temple 
 - litterly every updated exploit
 
-## Contact 
-» Discord (fastest response) <br />
+## me
+» Discord <br />
 > chiiicken#3436 <br />

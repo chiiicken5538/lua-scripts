@@ -45,7 +45,7 @@ end
 
 
 
-if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil then
+if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") == nil then
 
   print("[RAMStats] Waiting for DaHood to load...")
 
@@ -53,7 +53,7 @@ if game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil th
   until game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil
 
   print("[RAMStats] Script ready.")
-  
+
 end
 
 
@@ -81,7 +81,7 @@ if MyAccount then
 
     print("[RAMStats] Updated RAM description")
 
-    MyAccount:SetDescription("$"..format(game:GetService("Players").LocalPlayer.DataFolder.Currency.Value))
+    MyAccount:SetDescription("$"..format(game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder").Currency.Value))
 
     return
 

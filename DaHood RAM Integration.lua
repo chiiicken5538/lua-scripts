@@ -28,7 +28,7 @@ EnableWebServer=true
 
 [WebServer]
 WebServerPort=7963
-AllowGetCookie=true
+AllowGetCookie=false
 AllowGetAccounts=true
 AllowLaunchAccount=true
 AllowAccountEditing=true

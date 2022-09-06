@@ -69,17 +69,25 @@ if game.PlaceId == 6516141723 or 6839171747 then
                             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Y + 50,
                             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Z
                         ))
+
+                                  
             
                         repeat task.wait()
                         until game:GetService("Workspace"):FindFirstChild("RushMoving") == nil
             
             
-                        game:GetService("Players").LocalPlayer.Character:MoveTo(Vector3.new(prev_position))
-            
                         game:GetService("StarterGui"):SetCore("SendNotification", {
                             Title = "Rush gone!",
                             Text = "You will be teleported back!"
                         })
+
+                                          
+                        game:GetService("Players").LocalPlayer.Character:MoveTo(Vector3.new(
+                            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.X,
+                            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Y - 15,
+                            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Z
+                        ))
+
                         task.wait(4)
                         hideUI()
                 end

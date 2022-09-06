@@ -88,7 +88,6 @@ if game.PlaceId == 6516141723 or 6839171747 then
                             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Z
                         ))
 
-                        task.wait(4)
                         hideUI()
                 end
             end

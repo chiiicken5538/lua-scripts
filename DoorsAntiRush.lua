@@ -66,14 +66,14 @@ if game.PlaceId == 6516141723 or 6839171747 then
                             
                         game:GetService("Players").LocalPlayer.Character:MoveTo(Vector3.new(
                             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.X,
-                            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Y + 15,
+                            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Y + 30,
                             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Z
                         ))
    
 
                         repeat task.wait()
                         until (game:GetService("Workspace"):FindFirstChild("RushMoving"):FindFirstChild("RushNew").Position -
-                        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >= 85
+                        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >= 96
             
             
                         game:GetService("StarterGui"):SetCore("SendNotification", {

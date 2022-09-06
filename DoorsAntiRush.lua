@@ -55,7 +55,7 @@ if game.PlaceId == 6516141723 or 6839171747 then
         for k, v in pairs(game:GetService("Workspace"):GetChildren()) do
             if v.Name == "RushMoving" then
                 if (game:GetService("Workspace"):FindFirstChild("RushMoving"):FindFirstChild("RushNew").Position -
-                    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 100 then
+                    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 65 then
 
                         setUIText("Please wait a few seconds...")
                         showUI()
@@ -69,16 +69,16 @@ if game.PlaceId == 6516141723 or 6839171747 then
                             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Y + 50,
                             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position.Z
                         ))
+   
 
-                                  
-            
                         repeat task.wait()
-                        until game:GetService("Workspace"):FindFirstChild("RushMoving") == nil
+                        until (game:GetService("Workspace"):FindFirstChild("RushMoving"):FindFirstChild("RushNew").Position -
+                        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >= 67
             
             
                         game:GetService("StarterGui"):SetCore("SendNotification", {
                             Title = "Rush gone!",
-                            Text = "You will be teleported back!"
+                            Text = "You can continue now"
                         })
 
                                           

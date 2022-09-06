@@ -1,5 +1,6 @@
-if game.PlaceId == (6516141723 or 6839171747 or 6839171747) then
+if game.PlaceId == (6516141723 or 6839171747) then
 
+    print("Executed!")
     local ui = Instance.new("ScreenGui")
     local ui_frame = Instance.new("Frame")
     local ui_text = Instance.new("TextLabel")

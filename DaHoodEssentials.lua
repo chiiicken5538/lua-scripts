@@ -15,6 +15,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/chiiicken5538/lua-scr
 
 ]]
 
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+repeat task.wait()
+until game:GetService("Players").LocalPlayer:FindFirstChild("DataFolder") ~= nil
+
+
 if getgenv().Settings.Macro.Enabled then
     local macro = false
 

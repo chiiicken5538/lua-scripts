@@ -11,7 +11,7 @@ getgenv().Settings = {
     }
 }
 
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/chiiicken5538/lua-scripts/main/DaHoodEssentials.lua"))()
 
 ]]
 

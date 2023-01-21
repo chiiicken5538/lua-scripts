@@ -30,3 +30,5 @@ print("[BDH Crash Autostart] Crash is starting...")
 for k, v in pairs(getconnections(game:GetService("CoreGui").CrasherGui.CrasherFrame.SafeCrash.MouseButton1Down)) do
     v:Fire()
 end 
+
+print("[BDH Crash Autostart] Finished!")

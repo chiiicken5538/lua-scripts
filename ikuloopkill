@@ -27,15 +27,6 @@ if game.PlaceId ~= 2788229376 then
     return
 end
 
-local isPrivate = game:HttpGet("https://tuxer.xyz/is.game.private", true)
-
-if isPrivate == "True" then
-    log("Private server detected.")
-else
-    log('Public game detected - please execute in a private server.')
-    error('Public game detected - please execute in a private server.')
-    return
-end
 
 
 game:GetService("Players").LocalPlayer.Idled:Connect(function(time)
